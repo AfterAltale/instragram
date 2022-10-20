@@ -1,5 +1,11 @@
+<style>
+    .highlight {
+        color: red;
+        border:solid;
+    }
+</style>
 태그의 <strong>기초를</strong> 배워 보겠습니다.
-<div>
+<div id="head">
     <h1>heading1</h1>
     <h2>heading2</h2>
     <h3>heading3</h3>
@@ -12,14 +18,18 @@ width="250px"/>
         <button>
             <a href="https://booksr.co.kr">생능출판사</a>
         </button>
-        <input type="checkbox"/>빨강색을 좋아하시나요?<br/>
-        <input type="color" value="#ff0000"/>
+        <div>
+            <input type="checkbox"/>빨강색을 좋아하시나요?<br/>
+            <input type="color" value="#ff0000"/>
+    
+        </div>
     </div>
     <div>
         <input type="file" accept="image/*"/>
     </div>
 </div>
-<div>
+<!--한식 중식 일식-->
+<div class="highlight">
     <p>
         <input type="radio" name="radio1" checked/>한식
         <input type="radio" name="radio1" />중식
@@ -35,29 +45,35 @@ width="250px"/>
         <input type="radio" name="radio3" />안 매운 것
     </p>
 </div>
-<input type="range"/><br/>
-<input 
-type="range" min="0" max="1000"
-    /><br/>
-<input 
-    type="range" min="0" max="1000" step="10"
-    /></br>
-<input 
+<!--조절 슬라이더-->
+<div>
+    <input type="range"/><br/>
+    <input 
     type="range" min="0" max="1000"
-    step="10" value="10"
-/><br/>
-<p>
-    <input type="date"/>
-</p>
-<p>
-    <input type="month"/>
-</p>
-<p>
-    <input type="week"/>
-</p>
-<p>
-    <input type="time"/>
-</p>
-<p>
-    <input type="datetime-local"/>
-</p>
+        /><br/>
+    <input 
+        type="range" min="0" max="1000" step="10"
+        /></br>
+    <input 
+        type="range" min="0" max="1000"
+        step="10" value="10"
+    /><br/>
+</div>
+<!--날짜 입력창-->
+<div>
+    <p>
+        <input type="date"/>
+    </p>
+    <p>
+        <input type="month"/>
+    </p>
+    <p>
+        <input type="week"/>
+    </p>
+    <p>
+        <input type="time"/>
+    </p>
+    <p>
+        <input type="datetime-local"/>
+    </p>
+</div>
